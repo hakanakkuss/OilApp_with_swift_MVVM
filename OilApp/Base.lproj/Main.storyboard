@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OilApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5aN-I2-1QE">
+                                <rect key="frame" x="0.0" y="128" width="414" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="120" id="Vp5-ui-Cez" customClass="TableViewCell" customModule="OilApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vp5-ui-Cez" id="JE3-um-1sc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="za3-DS-IOe">
+                                                    <rect key="frame" x="28" y="18" width="86" height="84"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="86" id="RSQ-a5-wjO"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="IxR-TZ-KSv">
+                                                    <rect key="frame" x="148" y="13" width="100" height="94"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şirket İsmi:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFw-ky-x4r">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20.5" id="WtQ-Y2-SkN"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dizel Fiyatı:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpz-Bg-zXu">
+                                                            <rect key="frame" x="0.0" y="37.5" width="100" height="19"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katkılı Fiyatı:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsK-XL-XYP">
+                                                            <rect key="frame" x="0.0" y="73.5" width="100" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Gpz-Bg-zXu" firstAttribute="centerY" secondItem="IxR-TZ-KSv" secondAttribute="centerY" id="3YI-7x-q2A"/>
+                                                        <constraint firstAttribute="width" constant="100" id="cnz-ha-c2q"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ilt-lB-Nfa">
+                                                    <rect key="frame" x="256" y="9" width="136" height="97.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dss-kO-Szh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="136" height="25.5"/>
+                                                            <color key="tintColor" red="0.88280253509999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="JKO-NO-bJD"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBs-Po-pVh" userLabel="dizelPrice">
+                                                            <rect key="frame" x="0.0" y="34.5" width="136" height="30"/>
+                                                            <color key="tintColor" red="0.88280253509999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="6fz-5Z-qmj"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="Lu1-rM-NZu"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" red="0.88280253509999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-3i-MIM" userLabel="katkiliPrice">
+                                                            <rect key="frame" x="0.0" y="73.5" width="136" height="24"/>
+                                                            <color key="tintColor" red="0.88280253509999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="PSh-Jj-kuJ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" red="0.88280253509999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="za3-DS-IOe" firstAttribute="leading" secondItem="JE3-um-1sc" secondAttribute="leadingMargin" constant="8" id="4Zl-gn-EnO"/>
+                                                <constraint firstItem="ilt-lB-Nfa" firstAttribute="leading" secondItem="za3-DS-IOe" secondAttribute="trailing" constant="142" id="A43-Va-WbU"/>
+                                                <constraint firstItem="za3-DS-IOe" firstAttribute="centerY" secondItem="JE3-um-1sc" secondAttribute="centerY" id="Kmf-wV-fnC"/>
+                                                <constraint firstItem="ilt-lB-Nfa" firstAttribute="top" secondItem="JE3-um-1sc" secondAttribute="topMargin" constant="-2" id="VJ9-X4-BcC"/>
+                                                <constraint firstItem="IxR-TZ-KSv" firstAttribute="top" secondItem="JE3-um-1sc" secondAttribute="topMargin" constant="2" id="omR-ia-Qy7"/>
+                                                <constraint firstItem="IxR-TZ-KSv" firstAttribute="leading" secondItem="za3-DS-IOe" secondAttribute="trailing" constant="34" id="otp-E9-X2p"/>
+                                                <constraint firstItem="IxR-TZ-KSv" firstAttribute="centerY" secondItem="za3-DS-IOe" secondAttribute="centerY" id="uDA-uI-A4e"/>
+                                                <constraint firstItem="za3-DS-IOe" firstAttribute="top" secondItem="JE3-um-1sc" secondAttribute="topMargin" constant="7" id="w84-mc-ClX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="companyImageView" destination="za3-DS-IOe" id="rTK-9c-H44"/>
+                                            <outlet property="companyName" destination="Dss-kO-Szh" id="QUg-iW-Y9Z"/>
+                                            <outlet property="dizelPriceLabel" destination="VBs-Po-pVh" id="80c-C9-TBq"/>
+                                            <outlet property="katkiliPriceLabel" destination="ndb-3i-MIM" id="g0e-ts-bEl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HVo-7X-xpi">
+                                <rect key="frame" x="28" y="62" width="300" height="39.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İl giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAU-pb-E3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="39.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="aFh-Kk-300"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İlçe giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gz4-p2-XUG">
+                                        <rect key="frame" x="160" y="0.0" width="140" height="39.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="Xnu-N6-SEe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq2-dB-j2e">
+                                <rect key="frame" x="324" y="62" width="80" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="iPN-zA-16V"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Getir">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedGetirButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcQ-L7-BGk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zq2-dB-j2e" firstAttribute="bottom" secondItem="HVo-7X-xpi" secondAttribute="bottom" id="42q-Xj-UQO"/>
+                            <constraint firstItem="5aN-I2-1QE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lvv-tQ-3fC"/>
+                            <constraint firstItem="Zq2-dB-j2e" firstAttribute="leading" secondItem="HVo-7X-xpi" secondAttribute="trailing" constant="-4" id="MVZ-iO-nun"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5aN-I2-1QE" secondAttribute="trailing" id="RYP-7C-bru"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5aN-I2-1QE" secondAttribute="bottom" id="UHo-cV-gvg"/>
+                            <constraint firstItem="Zq2-dB-j2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="heD-8W-Ef0"/>
+                            <constraint firstItem="5aN-I2-1QE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="lDz-2P-Nca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zq2-dB-j2e" secondAttribute="trailing" constant="10" id="q5K-D9-qud"/>
+                            <constraint firstItem="Zq2-dB-j2e" firstAttribute="top" secondItem="HVo-7X-xpi" secondAttribute="top" id="y7r-aW-iOo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="fAU-pb-E3e" id="gnP-Ai-PDO"/>
+                        <outlet property="tableView" destination="5aN-I2-1QE" id="8OK-Rf-H84"/>
+                        <outlet property="townTextField" destination="Gz4-p2-XUG" id="wQv-G1-aV8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
