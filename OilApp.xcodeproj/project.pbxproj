@@ -16,6 +16,7 @@
 		521A0492296C2333007F54CE /* OilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A0491296C2333007F54CE /* OilModel.swift */; };
 		521A0494296C2960007F54CE /* OilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A0493296C2960007F54CE /* OilViewModel.swift */; };
 		521A0498296C2DA5007F54CE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A0497296C2DA5007F54CE /* TableViewCell.swift */; };
+		521A049A296D7A35007F54CE /* favoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A0499296D7A35007F54CE /* favoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		521A0491296C2333007F54CE /* OilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilModel.swift; sourceTree = "<group>"; };
 		521A0493296C2960007F54CE /* OilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilViewModel.swift; sourceTree = "<group>"; };
 		521A0497296C2DA5007F54CE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		521A0499296D7A35007F54CE /* favoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				521A047D296C1065007F54CE /* ViewController.swift */,
+				521A0499296D7A35007F54CE /* favoritesViewController.swift */,
 				521A0497296C2DA5007F54CE /* TableViewCell.swift */,
 			);
 			path = View;
@@ -174,6 +177,7 @@
 				521A047E296C1065007F54CE /* ViewController.swift in Sources */,
 				521A0494296C2960007F54CE /* OilViewModel.swift in Sources */,
 				521A047A296C1065007F54CE /* AppDelegate.swift in Sources */,
+				521A049A296D7A35007F54CE /* favoritesViewController.swift in Sources */,
 				521A0498296C2DA5007F54CE /* TableViewCell.swift in Sources */,
 				521A0492296C2333007F54CE /* OilModel.swift in Sources */,
 				521A047C296C1065007F54CE /* SceneDelegate.swift in Sources */,
